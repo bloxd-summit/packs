@@ -3,53 +3,87 @@
 <head>
   <meta charset="UTF-8">
   <title>Revia t-pack</title>
+
   <style>
     body {
-      background: #111;
-      color: white;
-      text-align: center;
+      margin: 0;
       font-family: Arial;
+      color: white;
+
+      /* 🔥 배경 이미지 */
+      background: url('https://iili.io/3EpShyN.jpg') no-repeat center center fixed;
+      background-size: cover;
+    }
+
+    /* 어둡게 덮는 효과 */
+    .overlay {
+      background: rgba(0,0,0,0.6);
+      min-height: 100vh;
+      padding: 30px;
     }
 
     h1 {
+      text-align: center;
       font-size: 40px;
-      margin: 30px;
+      margin-bottom: 40px;
     }
 
     .grid {
       display: grid;
-      grid-template-columns: repeat(2, 1fr);
+      grid-template-columns: repeat(3, 1fr);
       gap: 20px;
-      width: 60%;
+      width: 80%;
       margin: auto;
     }
 
+    /* 카드 스타일 */
     .card {
-      background: #222;
+      background: rgba(255,255,255,0.1);
+      backdrop-filter: blur(10px);
       padding: 20px;
-      border-radius: 10px;
+      border-radius: 15px;
+      border: 1px solid rgba(255,255,255,0.2);
+      transition: 0.3s;
+    }
+
+    .card:hover {
+      transform: scale(1.05);
     }
 
     a {
-      color: #00ffcc;
+      display: inline-block;
+      margin-top: 10px;
+      color: #00ffe5;
       text-decoration: none;
     }
   </style>
 </head>
+
 <body>
 
-<h1>Revia t-pack</h1>
+<div class="overlay">
 
-<div class="grid">
-  <div class="card">
-    <div>텍팩1</div>
-    <a href="파일링크.zip">다운로드</a>
+  <h1>Revia t-pack</h1>
+
+  <div class="grid">
+
+    <div class="card">
+      <div>텍팩1</div>
+      <a href="#">Download</a>
+    </div>
+
+    <div class="card">
+      <div>텍팩2</div>
+      <a href="#">Download</a>
+    </div>
+
+    <div class="card">
+      <div>텍팩3</div>
+      <a href="#">Download</a>
+    </div>
+
   </div>
 
-  <div class="card">
-    <div>텍팩2</div>
-    <a href="파일링크2.zip">다운로드</a>
-  </div>
 </div>
 
 </body>

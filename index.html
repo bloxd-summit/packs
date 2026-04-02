@@ -17,33 +17,35 @@
       background: rgba(0,0,0,0.6);
       min-height: 100vh;
       padding: 30px;
+      text-align: center;
     }
 
     h1 {
-      text-align: center;
       font-size: 40px;
-      margin-bottom: 10px; /* 🔥 살짝 줄임 */
+      margin-bottom: 10px;
     }
 
-    /* 🔥 추가된 링크 영역 */
     .links {
-      text-align: center;
-      margin-bottom: 30px;
+      margin-bottom: 40px;
       font-size: 18px;
     }
 
-    .links span {
-      margin: 0 10px;
-    }
-
     .links a {
-      margin: 0 10px;
-      color: #00ffe5;
       text-decoration: none;
+      font-weight: bold;
     }
 
-    .links a:hover {
-      text-decoration: underline;
+    /* 🔥 디스코드 (전체 보라색) */
+    .discord {
+      color: #5865F2;
+    }
+
+    /* 🔥 유튜브 */
+    .youtube .you {
+      color: red;
+    }
+    .youtube .tube {
+      color: white;
     }
 
     .grid {
@@ -101,16 +103,24 @@
 
   <h1>Revia t-pack</h1>
 
-  <!-- 🔥 여기 추가됨 -->
+  <!-- 🔥 링크 -->
   <div class="links">
-    <span>@KOR_Revia</span> |
-    <a href="https://discord.gg/jgyRfruC" target="_blank">my Discord</a> |
-    <a href="https://youtube.com/@R3via" target="_blank">my Youtube</a>
+    @KOR_Revia |
+    
+    <a href="https://discord.gg/jgyRfruC" target="_blank" class="discord">
+      discord
+    </a>
+
+    |
+
+    <a href="https://youtube.com/@R3via" target="_blank" class="youtube">
+      <span class="you">you</span><span class="tube">tube</span>
+    </a>
   </div>
 
   <div class="grid">
 
-    <a href="https://raw.githubusercontent.com/bloxd-Revia/packs/refs/heads/main/starLike.zip" download class="card">
+    <a href="https://raw.githubusercontent.com/bloxd-Revia/packs/main/starLike.zip" download class="card">
       <img src="https://iili.io/B2y9fql.png">
       <div class="title">starLike</div>
     </a>
@@ -125,22 +135,22 @@
       <div class="title">텍팩 추가 예정</div>
     </a>
 
-    <a href="#" class="card">
+        <a href="#" class="card">
       <img src="https://iili.io/B2y9fql.png">
       <div class="title">텍팩 추가 예정</div>
     </a>
 
-    <a href="#" class="card">
+        <a href="#" class="card">
       <img src="https://iili.io/B2y9fql.png">
       <div class="title">텍팩 추가 예정</div>
     </a>
 
-    <a href="#" class="card">
+        <a href="#" class="card">
       <img src="https://iili.io/B2y9fql.png">
       <div class="title">텍팩 추가 예정</div>
     </a>
 
-    <a href="#" class="card">
+        <a href="#" class="card">
       <img src="https://iili.io/B2y9fql.png">
       <div class="title">텍팩 추가 예정</div>
     </a>
